@@ -5,6 +5,8 @@ https://creativecommons.org/licenses/by/4.0/
 Source: https://github.com/webalys-hq/streamline-vectors/tree/52d750c9ce051e51cb181b7a78932120c48541d0/flex/gradient
 ZenOS naming, layout, and the adaptations listed in icon-sources.csv by xZenLabs.
 Adaptations include books, basic controls, navigation, battery and Wi-Fi states.
+ZenPM controls use additional free gradient assets and the adaptations recorded
+in icon-sources.csv. Shared lookup names are generated as build-time aliases.
 This pack uses only the open-licensed repository assets.
 
 Attribution 4.0 International

@@ -5,17 +5,24 @@ Colourful SVG icons from [Streamline](https://streamlinehq.com), packaged by
 and KOReader.
 
 This repository contains one pack: **Streamline Flex Gradient for ZenOS**.
-Its **121 source SVGs** export **189 icon lookup filenames** to
+Its **141 source SVGs** export **246 icon lookup filenames** to
 `dist/zen-streamline-flex-gradient.zip`. It themes all **23 built-in choices under
 Navbar → Tabs → Add → Tab**.
 
 ## Icons and coverage
 
+ZenPM's KOReader frontend is covered: all **39 bundled SVG names** and
+**33 inline menu names** (**63 unique lookups**). Navigation, all 12 categories,
+package and queue actions, verification badges, source icons, search, filtering,
+sorting and settings use matching artwork. ZenPM must support the selected ZenOS
+icon pack for these replacements to appear. Downloaded package logos and previews
+retain their own artwork.
+
 The pack uses the open-licensed `flex/gradient` assets from
 [Streamline's free vector repository](https://github.com/webalys-hq/streamline-vectors).
 The upstream revision is pinned to `52d750c9ce051e51cb181b7a78932120c48541d0`.
-The 500-design free set supplies 90 original designs used here. There are
-83 unchanged source SVGs and 38 adaptations.
+The 500-design free set supplies 107 original designs used here. There are
+100 unchanged source SVGs and 41 adaptations.
 
 - Library uses three upright books; Series uses a horizontal stack.
 - Continue Reading uses an open book; Manga uses four image panels.
@@ -40,7 +47,7 @@ fallback. Inline battery font glyphs continue to use their fonts.
 
 ![Common Zen icons](Streamline%20Flex%20Gradient/Common%20Zen%20Icons%20%28Colour%29.png)
 
-[View all source icons](Streamline%20Flex%20Gradient/Full%20Icon%20Overview%20%28Colour%29.png).
+[View the original source icons](Streamline%20Flex%20Gradient/Full%20Icon%20Overview%20%28Colour%29.png).
 
 ## Layout
 

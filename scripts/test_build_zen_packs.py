@@ -34,6 +34,16 @@ class BuildPacksTest(unittest.TestCase):
             align.left align.right align.center align.justify wifi.open.0 wifi.open.100
             wifi.secure.0 wifi.secure.100 lookup.dictionary lookup.highlight quick_aa quick_streak
         """.split())
+        # ZenPM's 39 bundled SVG names and 33 inline menu names (63 unique lookups).
+        required.update("""
+            allow_updates browser categories checkmark chevron.left chevron.right chevron.up
+            clear close date debug details disable discover downgrade download downloads
+            enable filter fonts games home icon_packs ignore_updates info kindleforge media
+            open_box packages patch plugin productivity qrcode reference refresh reinstall
+            remove remove_queue scan_plugins screensaver search settings settings_advanced
+            settings_bug sort sort_asc sort_desc sources star star.filled sync_off theme
+            title uninstall unverified update upgrade utility verified wallabag wallpaper zen zenpm
+        """.split())
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary)
             packs = list(builder.pack_sources(builder.ROOT, output))
@@ -42,7 +52,7 @@ class BuildPacksTest(unittest.TestCase):
             paths = [path for directory in directories for path in directory.glob("*.svg")]
             sources = {path.name: path for path in paths}
             self.assertEqual(len(sources), len(paths))
-            self.assertEqual(len(sources), 121)
+            self.assertEqual(len(sources), 141)
             self.assertFalse(list(pack.rglob("pack.lua")))
             metadata = json.loads((pack / "pack.json").read_text())
             self.assertEqual(metadata, json.loads((builder.ROOT / "pack.json").read_text()))
@@ -62,7 +72,7 @@ class BuildPacksTest(unittest.TestCase):
             with zipfile.ZipFile(destination) as archive:
                 names = {Path(name).stem for name in archive.namelist() if name.endswith(".svg")}
                 self.assertFalse(required - names, sorted(required - names))
-                self.assertEqual(len(names), 189)
+                self.assertEqual(len(names), 246)
                 self.assertFalse(any(name.endswith(".lua") for name in archive.namelist()))
                 self.assertEqual(len(archive.namelist()), len(set(archive.namelist())))
                 prefix = destination.stem + "/"

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="enable--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Replaced pause cutouts with a play triangle.</desc>
+  <g id="button-pause-circle--controls-pause-multi-media-multimedia-button-circle 1">
+    <path id="Subtract" fill="url(#paint0_linear_9380_2939)" fill-rule="evenodd" d="M7 0C4.82797 0 3.06046.612432 1.83645 1.83645.612432 3.06046 0 4.82797 0 7s.612432 3.9395 1.83645 5.1636C3.06046 13.3876 4.82797 14 7 14s3.9395-.6124 5.1636-1.8364C13.3876 10.9395 14 9.17203 14 7s-.6124-3.93954-1.8364-5.16355C10.9395.612432 9.17203 0 7 0Z M5.3 3.6 L10.4 7 L5.3 10.4 Z" clip-rule="evenodd" />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_9380_2939" x1=".538" x2="16.494" y1="1.131" y2="10.125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d078" />
+      <stop offset="1" stop-color="#007df0" />
+    </linearGradient>
+  </defs>
+</svg>
