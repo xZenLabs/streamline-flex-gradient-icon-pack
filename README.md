@@ -47,7 +47,9 @@ fallback. Inline battery font glyphs continue to use their fonts.
 
 ![Common Zen icons](Streamline%20Flex%20Gradient/Common%20Zen%20Icons%20%28Colour%29.png)
 
-[View the original source icons](Streamline%20Flex%20Gradient/Full%20Icon%20Overview%20%28Colour%29.png).
+## Icon overview
+
+![Streamline Flex Gradient: all source icons with filenames](Streamline%20Flex%20Gradient/Full%20Icon%20Overview%20%28Colour%29.png)
 
 ## Layout
 
@@ -72,6 +74,10 @@ Keep `pack.json` and SVG files directly inside that folder.
 See the [ZenOS icon pack guide](https://github.com/xZenLabs/zen-os/blob/main/docs/icon-packs.md).
 
 ## Build and release
+
+Each pack manifest includes `"color": true` for colour artwork or
+`"color": false` for monochrome artwork. Per-style values are retained in the
+release ZIPs when building the whole repository.
 
 ```sh
 python3 -m venv .venv
