@@ -4,6 +4,10 @@ Colourful SVG icons from [Streamline](https://streamlinehq.com), packaged by
 [ZenLabs](https://github.com/xZenLabs) for [ZenOS](https://github.com/xZenLabs/zen-os)
 and KOReader.
 
+## Icon overviews
+
+![Streamline Flex Gradient: selected KOReader controls, library tabs, and common actions](.github/overview-streamline-flex-gradient.png)
+
 This repository contains one pack: **Streamline Flex Gradient for ZenOS**.
 Its **141 source SVGs** export **246 icon lookup filenames** to
 `dist/zen-streamline-flex-gradient.zip`. It themes all **23 built-in choices under
@@ -45,12 +49,6 @@ Specialised reading-status, orientation and direction glyphs, Zen mode, crosswor
 RSS and other lookups without a suitable match use the normal ZenOS or KOReader
 fallback. Inline battery font glyphs continue to use their fonts.
 
-![Common Zen icons](Streamline%20Flex%20Gradient/Common%20Zen%20Icons%20%28Colour%29.png)
-
-## Icon overview
-
-![Streamline Flex Gradient: all source icons with filenames](Streamline%20Flex%20Gradient/Full%20Icon%20Overview%20%28Colour%29.png)
-
 ## Layout
 
 `Streamline Flex Gradient` contains `Pack Icons (Colour)`,
@@ -74,6 +72,8 @@ Keep `pack.json` and SVG files directly inside that folder.
 See the [ZenOS icon pack guide](https://github.com/xZenLabs/zen-os/blob/main/docs/icon-packs.md).
 
 ## Build and release
+
+For your own pack, start with the [Zen icon pack template](https://github.com/xZenLabs/icon-pack-template).
 
 Each pack manifest includes `"color": true` for colour artwork or
 `"color": false` for monochrome artwork. Per-style values are retained in the
