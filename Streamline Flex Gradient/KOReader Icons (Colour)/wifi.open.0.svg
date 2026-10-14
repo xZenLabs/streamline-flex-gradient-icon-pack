@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="wifi.open.0--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Reused the native Wi-Fi arc at four sizes for 0% signal; replaced the padlock with a signal dot.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9380_1174" x1="1.463" x2="16.074" y1="1.131" y2="8.189" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d078" />
+      <stop offset="1" stop-color="#007df0" />
+    </linearGradient>
+  </defs>
+<circle cx="7" cy="12" r="1" fill="url(#paint0_linear_9380_1174)" /></svg>

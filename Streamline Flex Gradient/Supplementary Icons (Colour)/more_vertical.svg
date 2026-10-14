@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="more_vertical--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Extracted the three typing dots and rotated them into a vertical menu.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9371_12559" x1=".537" x2="16.494" y1="1.131" y2="10.125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d078" />
+      <stop offset="1" stop-color="#007df0" />
+    </linearGradient>
+  </defs>
+<path fill="url(#paint0_linear_9371_12559)" fill-rule="evenodd" d="M5.13538 6.56677c0-.41421-.33579-.75-.75-.75-.41422 0-.75.33579-.75.75V7c0 .41421.33578.75.75.75.41421 0 .75-.33579.75-.75v-.43323Zm2.91955 0c0-.41421-.33578-.75-.75-.75-.41421 0-.75.33579-.75.75V7c0 .41421.33579.75.75.75.41422 0 .75-.33579.75-.75v-.43323Zm2.16947-.75c.4142 0 .75.33579.75.75V7c0 .41421-.3358.75-.75.75-.41425 0-.75003-.33579-.75003-.75v-.43323c0-.41421.33578-.75.75003-.75Z" clip-rule="evenodd" transform="rotate(90 7 7)" />
+  </svg>

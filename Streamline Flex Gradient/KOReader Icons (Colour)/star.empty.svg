@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="6 -.7 8.8 8.8" id="star.empty--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Extracted and enlarged the star, removing the hand. Used its gradient as an outline for Favorites.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9371_6260" x1="2.288" x2="13.596" y1="2.692" y2="8.957" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd600" />
+      <stop offset="1" stop-color="#00d078" />
+    </linearGradient>
+  </defs>
+<path fill="none" fill-rule="evenodd" d="M9.49014.528352c.41857-.704472 1.41526-.70464 1.83346.000519.2264.381872.3972.789089.5237 1.234189.4427-.00238.868.03786 1.2872.12687.8057.1711 1.1492 1.12416.5928 1.75414-.288.32603-.6172.60747-.9976.85709.1332.40506.2203.80751.2649 1.21727.091.83462-.728 1.47027-1.5123 1.12085-.38-.16929-.735-.38451-1.0768-.65195-.3415.26724-.69592.48238-1.07533.65164-.78433.34989-1.60329-.286-1.51236-1.12054.04464-.40976.13178-.81221.26492-1.21727-.38043-.24962-.70963-.53106-.99756-.85709-.55638-.62998-.21292-1.58304.59278-1.75414.41918-.08901.84455-.12925 1.28725-.12687.12667-.44538.29799-.852755.52494-1.234708Z" clip-rule="evenodd" stroke="url(#paint0_linear_9371_6260)" stroke-width=".6" stroke-linejoin="round" />
+  </svg>

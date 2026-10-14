@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="move.down--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Extracted the chevron from its circle and rotated it for this navigation direction.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9371_6978" x1="2.29" x2="13.595" y1="2.693" y2="8.957" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd600" />
+      <stop offset="1" stop-color="#00d078" />
+    </linearGradient>
+  </defs>
+<g transform="rotate(270 7 7)"><path fill="url(#paint0_linear_9371_6978)" fill-rule="evenodd" d="M4.43723 7.00012c0-.03985.01511-.08572.05937-.1276.96552-.91366 2.76832-2.19448 4.67367-2.67082.33487-.08372.53847-.42305.45475-.75792-.08371-.33487-.42305-.53847-.75792-.45476-2.18457.54615-4.17138 1.97414-5.22966 2.97556-.60028.56803-.60028 1.50306 0 2.07109C4.69572 9.03709 6.68253 10.4651 8.8671 11.0112c.33487.0837.67421-.1199.75792-.4547.08372-.3349-.11988-.67423-.45475-.75795-1.90535-.47634-3.70815-1.75716-4.67367-2.67082-.04426-.04188-.05937-.08775-.05937-.12761Z" clip-rule="evenodd" />
+  </g></svg>
