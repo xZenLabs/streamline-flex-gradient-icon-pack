@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert extracted SimpleUI icon packs to standalone ZenOS ZIPs."""
+"""Build standalone ZenOS ZIPs from grouped or legacy icon packs."""
 
 import argparse
 import ast
@@ -113,8 +113,6 @@ ALIASES = {
     "lookup_vocab": "tab_vocab",
     "move.down": "control.collapse",
     "notice-info": "info",
-    "qa_group": "tab_collections",
-    "qa_plugin": "quick_puzzle",
     "quick_battery": "battery_full",
     "quick_calibre": "book_closed",
     "quick_calibre_dark": "quick_calibre",
@@ -136,7 +134,7 @@ ALIASES = {
     "tab_books": "library",
     "tab_continue": "book.opened",
     "tab_exit": "quick_exit",
-    "tab_favorites": "star.empty",
+    "tab_favorites": "star.full",
     "tab_filebrowser": "appbar.filebrowser",
     "tab_fm_settings": "appbar.filebrowser",
     "tab_folder": "folder",
@@ -275,7 +273,9 @@ def pack_sources(root, output):
                     child == bundle or child in bundle.parents for bundle in bundles) and any(
                     path.suffix.lower() in (".svg", ".png") for path in child.iterdir()):
                 yield child, [child]
-    elif any(path.suffix.lower() in (".svg", ".png") or
+    elif any((root / name).is_dir() for name in (
+            "navbar", "controls", "launcher", "zenpm", "lookup", "menus", "reader", "device", "koreader",
+            "icons")) or any(path.suffix.lower() in (".svg", ".png") or
              (path.is_dir() and path.name.startswith("Pack Icons")) for path in root.iterdir()):
         yield root, icon_directories(root)
     else:
@@ -405,7 +405,7 @@ def build_pack(pack, directories, root, output, version, metadata=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", nargs="?", type=Path, default=ROOT,
-                        help="Extracted SimpleUI pack folder or repository (default: this repo)")
+                        help="Icon pack folder or repository (default: this repo)")
     parser.add_argument("--output", type=Path, default=Path("dist"), help="Output directory")
     parser.add_argument("--version", help="Override the pack or repository version")
     args = parser.parse_args()

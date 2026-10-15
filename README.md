@@ -9,7 +9,7 @@ and KOReader.
 ![Streamline Flex Gradient: selected KOReader controls, library tabs, and common actions](.github/overview-streamline-flex-gradient.png)
 
 This repository contains one pack: **Streamline Flex Gradient for ZenOS**.
-Its **141 source SVGs** export **246 icon lookup filenames** to
+Its **244 editable SVGs** use exact runtime lookup filenames and build into
 `dist/zen-streamline-flex-gradient.zip`. It themes all **23 built-in choices under
 Navbar → Tabs → Add → Tab**.
 
@@ -26,9 +26,11 @@ The pack uses the open-licensed `flex/gradient` assets from
 [Streamline's free vector repository](https://github.com/webalys-hq/streamline-vectors).
 The upstream revision is pinned to `52d750c9ce051e51cb181b7a78932120c48541d0`.
 The 500-design free set supplies 107 original designs used here. There are
-100 unchanged source SVGs and 41 adaptations.
+100 unchanged original SVGs and 41 adaptations; additional lookup files copy
+that artwork unchanged.
 
 - Library uses three upright books; Series uses a horizontal stack.
+- Favorites uses a filled gradient star.
 - Continue Reading uses an open book; Manga uses four image panels.
 - News uses a newspaper, Tags a tag, and Folder a plain folder.
 - Controls and Quick Settings use sliders. The launcher, vertical three-dot menu,
@@ -49,14 +51,37 @@ Specialised reading-status, orientation and direction glyphs, Zen mode, crosswor
 RSS and other lookups without a suitable match use the normal ZenOS or KOReader
 fallback. Inline battery font glyphs continue to use their fonts.
 
-## Layout
+## Source layout
 
-`Streamline Flex Gradient` contains `Pack Icons (Colour)`,
-`KOReader Icons (Colour)` and `Supplementary Icons (Colour)`.
-KOReader files preserve their lookup names, including `appbar.settings`,
-`book.opened` and `wifi.open.100`. Zen files use Zen names directly.
-Source filenames are unique across the three folders. Shared artwork uses
-build-time aliases. No Lua pack scripts are shipped.
+Each style keeps category folders directly beside `pack.json`.
+Categories without replacement artwork can be absent:
+
+```text
+<Style>/
+├── pack.json
+├── navbar/
+├── controls/                 # Quick settings and Zen controls
+├── launcher/
+├── zenpm/                    # Includes verification shields
+├── lookup/
+├── menus/                    # Zen menu entry points
+├── reader/                   # Page browser: TOC, vocabulary, view modes
+├── device/
+└── koreader/                 # Stock KOReader icons, including plus/info
+```
+
+[ICON-LIST.md](ICON-LIST.md) lists the filenames by category. Page-browser TOC, vocabulary-builder,
+and view icons belong in `reader/`. All stock KOReader icons, including `appbar.*`,
+the Aa font button, plus/info, bookmarks, and `book_open`, belong in `koreader/`. Quick settings
+belong in `controls/`; `tab_left` and `tab_right` belong in `navbar/`.
+Shared lookup names appear only once per style;
+different lookup names can be edited independently.
+
+Legacy SimpleUI `qa_group` and `qa_plugin` files are omitted. ZenPM uses
+`plugin.svg`; its verification shields belong in `zenpm/`.
+The builder flattens the categories into the pack root in release ZIPs,
+so installed lookup names and artwork remain unchanged apart from the two
+obsolete SimpleUI names. Missing icons keep their normal bundled fallbacks.
 
 ## Install
 

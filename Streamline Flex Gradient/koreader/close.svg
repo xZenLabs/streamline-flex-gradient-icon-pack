@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="1.5 4.25 5.5 5.5" id="close--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Extracted and enlarged the rounded X from the delete-tag icon.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9371_5719" x1="2.288" x2="11.849" y1="3.769" y2="10.832" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd600" />
+      <stop offset="1" stop-color="#00d078" />
+    </linearGradient>
+  </defs>
+<path fill="url(#paint0_linear_9371_5719)" fill-rule="evenodd" d="M6.18855 8.94246c-.24408.24408-.6398.24407-.88388 0L4.24615 7.88394l-1.0586 1.05861c-.24408.24408-.63981.24408-.88389 0-.24407-.24408-.24407-.63981 0-.88389l1.05861-1.0586-1.05861-1.05861c-.24407-.24407-.24407-.6398 0-.88388.24408-.24408.63981-.24408.88389 0l1.0586 1.05861 1.05852-1.05852c.24408-.24408.6398-.24408.88388 0 .24408.24408.24408.63981 0 .88388L5.13004 7.00006l1.05851 1.05851c.24408.24408.24408.63981 0 .88389Z" clip-rule="evenodd" />
+  </svg>

@@ -6,7 +6,7 @@ Source: https://github.com/webalys-hq/streamline-vectors/tree/52d750c9ce051e51cb
 ZenOS naming, layout, and the adaptations listed in icon-sources.csv by xZenLabs.
 Adaptations include books, basic controls, navigation, battery and Wi-Fi states.
 ZenPM controls use additional free gradient assets and the adaptations recorded
-in icon-sources.csv. Shared lookup names are generated as build-time aliases.
+in icon-sources.csv. Shared lookup names are stored as explicit source SVGs.
 This pack uses only the open-licensed repository assets.
 
 Attribution 4.0 International

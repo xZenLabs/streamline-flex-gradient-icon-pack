@@ -49,21 +49,19 @@ class BuildPacksTest(unittest.TestCase):
             packs = list(builder.pack_sources(builder.ROOT, output))
             self.assertEqual([pack.name for pack, _ in packs], ["Streamline Flex Gradient"])
             pack, directories = packs[0]
-            paths = [path for directory in directories for path in directory.glob("*.svg")]
+            paths = [path for directory in directories for path in directory.rglob("*.svg")]
             sources = {path.name: path for path in paths}
             self.assertEqual(len(sources), len(paths))
-            self.assertEqual(len(sources), 141)
+            self.assertEqual(len(sources), 244)
             self.assertFalse(list(pack.rglob("pack.lua")))
             metadata = json.loads((pack / "pack.json").read_text())
             self.assertEqual(metadata, json.loads((builder.ROOT / "pack.json").read_text()))
             self.assertIn("Streamline", metadata["author"])
-            koreader = next(directory for directory in directories
-                            if directory.name.startswith("KOReader Icons"))
+            koreader = pack / "koreader"
             self.assertTrue({"appbar.menu", "appbar.search", "appbar.settings", "book.opened",
                              "wifi.open.100", "wifi.secure.100"}
                             <= {path.stem for path in koreader.glob("*.svg")})
-            zen_paths = [path for path in paths if path.parent != koreader]
-            self.assertEqual(len(zen_paths), len({path.read_bytes() for path in zen_paths}))
+            self.assertFalse({"qa_group.svg", "qa_plugin.svg"} & sources.keys())
             destination = builder.build_pack(pack, directories, builder.ROOT,
                                              output, None, metadata)
             first_build = destination.read_bytes()
@@ -72,16 +70,14 @@ class BuildPacksTest(unittest.TestCase):
             with zipfile.ZipFile(destination) as archive:
                 names = {Path(name).stem for name in archive.namelist() if name.endswith(".svg")}
                 self.assertFalse(required - names, sorted(required - names))
-                self.assertEqual(len(names), 246)
+                self.assertEqual(len(names), 244)
                 self.assertFalse(any(name.endswith(".lua") for name in archive.namelist()))
                 self.assertEqual(len(archive.namelist()), len(set(archive.namelist())))
                 prefix = destination.stem + "/"
                 for name, path in sources.items():
                     self.assertEqual(archive.read(prefix + name), path.read_bytes())
-                for target, source in builder.ALIASES.items():
-                    if target + ".svg" not in sources and source in names:
-                        self.assertEqual(archive.read(prefix + target + ".svg"),
-                                         archive.read(prefix + source + ".svg"))
+                self.assertEqual(archive.read(prefix + "tab_favorites.svg"),
+                                 archive.read(prefix + "star.full.svg"))
                 self.assertEqual(json.loads(archive.read(prefix + "pack.json")), metadata)
                 self.assertIn(b"Attribution 4.0 International", archive.read(prefix + "LICENSE-ICONS.txt"))
                 battery_states = [archive.read(prefix + "battery_" + level + ".svg")
@@ -127,6 +123,39 @@ class BuildPacksTest(unittest.TestCase):
                 for key, value in element.attrib.items():
                     if key.rsplit("}", 1)[-1] == "href":
                         self.assertTrue(value.startswith("#"))
+
+    def test_grouped_pack_builds_directly_and_keeps_explicit_alias_artwork(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            pack, output = root / "Grouped", root / "output"
+            files = {
+                "navbar/tab_books.svg": SVG,
+                "controls/quick_search.svg": SVG,
+                "koreader/appbar.search.svg": SVG.replace(b"48", b"24"),
+                "koreader/book_open.svg": SVG,
+                "koreader/appbar.textsize.svg": SVG,
+                "navbar/tab_left.svg": SVG,
+                "navbar/tab_right.svg": SVG,
+                "zenpm/packages.svg": SVG,
+            }
+            for name, data in files.items():
+                path = pack / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(data)
+            (pack / "pack.json").write_text(json.dumps({
+                "schema_version": 1, "id": "zen-grouped", "name": "Grouped for ZenOS",
+            }))
+            for source in (root, pack):
+                with self.subTest(source=source):
+                    self.assertEqual(list(builder.pack_sources(source, output)), [(pack, [pack])])
+                    with patch("sys.argv", ["build-zen-packs.py", str(source),
+                                            "--output", str(output)]):
+                        builder.main()
+                    with zipfile.ZipFile(output / "zen-grouped.zip") as archive:
+                        self.assertTrue(all(len(Path(name).parts) == 2
+                                            for name in archive.namelist()))
+                        for name, data in files.items():
+                            self.assertEqual(archive.read("zen-grouped/" + Path(name).name), data)
 
     def test_color_metadata_survives_repository_and_direct_builds(self):
         with tempfile.TemporaryDirectory() as temporary:

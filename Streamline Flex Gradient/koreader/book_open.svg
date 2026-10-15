@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -1 13 13" id="book.opened--Streamline-Flex-Gradient">
+  <desc>Adapted from Streamline Flex Gradient: https://streamlinehq.com. Mirrored the original left page into a complete open book, removing the reader figure.</desc>
+  <defs>
+    <linearGradient id="paint0_linear_9380_3592" x1=".538" x2="16.493" y1="1.133" y2="10.127" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d078" />
+      <stop offset="1" stop-color="#007df0" />
+    </linearGradient>
+  </defs>
+<path fill="url(#paint0_linear_9380_3592)" fill-rule="evenodd" d="M.388773 1.17988C.529026.503225 1.09212-.0921469 1.92458.0143603l.01071.0013698C3.3965.23483 4.74229.938751 5.8573 1.81484v9.02436c-.22487.1967-.41982.4175-.58397.6554-.07993-.0836-.1596-.1571-.26905-.2284-.94302-.6137-2.34733-1.30262-3.4148-1.43493C.890362 9.75793.489429 9.14875.388525 8.65585c-.514702-2.51429-.521438-4.95919.000248-7.47597Z" clip-rule="evenodd" />
+  <g transform="translate(13 0) scale(-1 1)"><path fill="url(#paint0_linear_9380_3592)" fill-rule="evenodd" d="M.388773 1.17988C.529026.503225 1.09212-.0921469 1.92458.0143603l.01071.0013698C3.3965.23483 4.74229.938751 5.8573 1.81484v9.02436c-.22487.1967-.41982.4175-.58397.6554-.07993-.0836-.1596-.1571-.26905-.2284-.94302-.6137-2.34733-1.30262-3.4148-1.43493C.890362 9.75793.489429 9.14875.388525 8.65585c-.514702-2.51429-.521438-4.95919.000248-7.47597Z" clip-rule="evenodd" />
+  </g></svg>
