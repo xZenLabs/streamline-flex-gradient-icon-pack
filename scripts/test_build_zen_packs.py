@@ -52,7 +52,7 @@ class BuildPacksTest(unittest.TestCase):
             paths = [path for directory in directories for path in directory.rglob("*.svg")]
             sources = {path.name: path for path in paths}
             self.assertEqual(len(sources), len(paths))
-            self.assertEqual(len(sources), 244)
+            self.assertEqual(len(sources), 358)
             self.assertFalse(list(pack.rglob("pack.lua")))
             metadata = json.loads((pack / "pack.json").read_text())
             self.assertEqual(metadata, json.loads((builder.ROOT / "pack.json").read_text()))
@@ -70,7 +70,7 @@ class BuildPacksTest(unittest.TestCase):
             with zipfile.ZipFile(destination) as archive:
                 names = {Path(name).stem for name in archive.namelist() if name.endswith(".svg")}
                 self.assertFalse(required - names, sorted(required - names))
-                self.assertEqual(len(names), 244)
+                self.assertEqual(len(names), 358)
                 self.assertFalse(any(name.endswith(".lua") for name in archive.namelist()))
                 self.assertEqual(len(archive.namelist()), len(set(archive.namelist())))
                 prefix = destination.stem + "/"

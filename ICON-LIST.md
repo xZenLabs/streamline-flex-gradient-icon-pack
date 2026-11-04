@@ -15,6 +15,7 @@ Release ZIPs flatten the categories into the pack root.
 | [menus](#menus) | Zen menu entry points. |
 | [reader](#reader) | Page-browser TOC, vocabulary builder, and single/carousel/grid view modes. |
 | [device](#device) | Zen battery, lighting, power, hardware, and system indicators. |
+| [settings](#settings) | ZenOS settings menu rows, mirroring ZenOS's bundled `settings_*` lookups. |
 | [koreader](#koreader) | Stock KOReader icons, including appbar, plus/info, bookmarks, and book_open. |
 
 ## navbar
@@ -117,12 +118,15 @@ App Launcher, plugin shortcuts, and utility artwork for the icon picker.
 | `filebrowserplus.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/filebrowserplus.svg) |
 | `flame.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/flame.svg) |
 | `folder_open.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/folder_open.svg) |
+| `font.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/font.svg) |
 | `globe.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/globe.svg) |
+| `paint_palette.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/paint_palette.svg) |
 | `random_document.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/random_document.svg) |
 | `records.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/records.svg) |
 | `speed.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/speed.svg) |
 | `tablet.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/tablet.svg) |
 | `terminal.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/terminal.svg) |
+| `trash.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/trash.svg) |
 
 ## zenpm
 
@@ -221,11 +225,28 @@ from [koreader](#koreader).
 
 | Lookup filename | Streamline Flex Gradient |
 |---|---|
+| `annotations.svg` | [SVG](Streamline%20Flex%20Gradient/reader/annotations.svg) |
+| `bookmark_outline.svg` | [SVG](Streamline%20Flex%20Gradient/reader/bookmark_outline.svg) |
+| `bookmark_remove.svg` | [SVG](Streamline%20Flex%20Gradient/reader/bookmark_remove.svg) |
 | `coverflow.svg` | [SVG](Streamline%20Flex%20Gradient/reader/coverflow.svg) |
+| `document.svg` | [SVG](Streamline%20Flex%20Gradient/reader/document.svg) |
+| `footnote.svg` | [SVG](Streamline%20Flex%20Gradient/reader/footnote.svg) |
+| `fullscreen.svg` | [SVG](Streamline%20Flex%20Gradient/reader/fullscreen.svg) |
+| `fullscreen_exit.svg` | [SVG](Streamline%20Flex%20Gradient/reader/fullscreen_exit.svg) |
 | `grid.svg` | [SVG](Streamline%20Flex%20Gradient/reader/grid.svg) |
 | `grid_slide.svg` | [SVG](Streamline%20Flex%20Gradient/reader/grid_slide.svg) |
+| `history.svg` | [SVG](Streamline%20Flex%20Gradient/reader/history.svg) |
+| `moon_outline.svg` | [SVG](Streamline%20Flex%20Gradient/reader/moon_outline.svg) |
+| `page.svg` | [SVG](Streamline%20Flex%20Gradient/reader/page.svg) |
+| `pin.svg` | [SVG](Streamline%20Flex%20Gradient/reader/pin.svg) |
+| `pin_remove.svg` | [SVG](Streamline%20Flex%20Gradient/reader/pin_remove.svg) |
+| `profiles.svg` | [SVG](Streamline%20Flex%20Gradient/reader/profiles.svg) |
+| `return.svg` | [SVG](Streamline%20Flex%20Gradient/reader/return.svg) |
+| `return_old.svg` | [SVG](Streamline%20Flex%20Gradient/reader/return_old.svg) |
 | `tab_vocab.svg` | [SVG](Streamline%20Flex%20Gradient/reader/tab_vocab.svg) |
 | `toc.svg` | [SVG](Streamline%20Flex%20Gradient/reader/toc.svg) |
+| `zoom_in.svg` | [SVG](Streamline%20Flex%20Gradient/reader/zoom_in.svg) |
+| `zoom_out.svg` | [SVG](Streamline%20Flex%20Gradient/reader/zoom_out.svg) |
 
 ## device
 
@@ -254,6 +275,107 @@ Zen battery, lighting, power, hardware, and system indicators.
 | `timer.svg` | [SVG](Streamline%20Flex%20Gradient/device/timer.svg) |
 | `usb.svg` | [SVG](Streamline%20Flex%20Gradient/device/usb.svg) |
 | `warmth.svg` | [SVG](Streamline%20Flex%20Gradient/device/warmth.svg) |
+
+## settings
+
+ZenOS settings menu rows, mirroring ZenOS's bundled `settings_*` lookups.
+
+| Lookup filename | Streamline Flex Gradient |
+|---|---|
+| `settings_account_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_account_outline.svg) |
+| `settings_archive_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_archive_outline.svg) |
+| `settings_arrow_up_circle_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_arrow_up_circle_outline.svg) |
+| `settings_backup_restore.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_backup_restore.svg) |
+| `settings_battery_70.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_battery_70.svg) |
+| `settings_bluetooth.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_bluetooth.svg) |
+| `settings_blur.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_blur.svg) |
+| `settings_book.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_book.svg) |
+| `settings_book_check.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_book_check.svg) |
+| `settings_book_cog_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_book_cog_outline.svg) |
+| `settings_book_multiple_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_book_multiple_outline.svg) |
+| `settings_book_open_variant.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_book_open_variant.svg) |
+| `settings_bookshelf.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_bookshelf.svg) |
+| `settings_brush.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_brush.svg) |
+| `settings_calendar_month_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_calendar_month_outline.svg) |
+| `settings_chart_line.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_chart_line.svg) |
+| `settings_check.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_check.svg) |
+| `settings_chip.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_chip.svg) |
+| `settings_clipboard_play_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_clipboard_play_outline.svg) |
+| `settings_clock_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_clock_outline.svg) |
+| `settings_cloud_download_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_cloud_download_outline.svg) |
+| `settings_cog.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_cog.svg) |
+| `settings_content_copy.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_content_copy.svg) |
+| `settings_content_cut.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_content_cut.svg) |
+| `settings_content_paste.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_content_paste.svg) |
+| `settings_content_save.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_content_save.svg) |
+| `settings_cursor_move.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_cursor_move.svg) |
+| `settings_delete_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_delete_outline.svg) |
+| `settings_dots_grid.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_dots_grid.svg) |
+| `settings_dots_horizontal.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_dots_horizontal.svg) |
+| `settings_download.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_download.svg) |
+| `settings_draw_pen.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_draw_pen.svg) |
+| `settings_eye_off.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_eye_off.svg) |
+| `settings_eye_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_eye_outline.svg) |
+| `settings_file_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_file_outline.svg) |
+| `settings_file_tree.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_file_tree.svg) |
+| `settings_flash.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_flash.svg) |
+| `settings_folder_home_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_folder_home_outline.svg) |
+| `settings_folder_open_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_folder_open_outline.svg) |
+| `settings_folder_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_folder_outline.svg) |
+| `settings_folder_plus_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_folder_plus_outline.svg) |
+| `settings_format_horizontal_align_center.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_format_horizontal_align_center.svg) |
+| `settings_format_list_bulleted.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_format_list_bulleted.svg) |
+| `settings_format_underline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_format_underline.svg) |
+| `settings_gesture_double_tap.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_gesture_double_tap.svg) |
+| `settings_grid_large.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_grid_large.svg) |
+| `settings_harddisk.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_harddisk.svg) |
+| `settings_history.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_history.svg) |
+| `settings_home_variant.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_home_variant.svg) |
+| `settings_image_filter_hdr.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_image_filter_hdr.svg) |
+| `settings_image_multiple_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_image_multiple_outline.svg) |
+| `settings_keyboard.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_keyboard.svg) |
+| `settings_lightning_bolt.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_lightning_bolt.svg) |
+| `settings_lock.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_lock.svg) |
+| `settings_magnify.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_magnify.svg) |
+| `settings_memory.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_memory.svg) |
+| `settings_menu.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_menu.svg) |
+| `settings_note_plus_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_note_plus_outline.svg) |
+| `settings_palette.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_palette.svg) |
+| `settings_pan_horizontal.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_pan_horizontal.svg) |
+| `settings_pause.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_pause.svg) |
+| `settings_pencil_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_pencil_outline.svg) |
+| `settings_power_plug.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_power_plug.svg) |
+| `settings_receipt_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_receipt_outline.svg) |
+| `settings_reflect_horizontal.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_reflect_horizontal.svg) |
+| `settings_refresh.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_refresh.svg) |
+| `settings_restart.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_restart.svg) |
+| `settings_restore.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_restore.svg) |
+| `settings_selection.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_selection.svg) |
+| `settings_sleep.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sleep.svg) |
+| `settings_sort_alphabetical_ascending.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sort_alphabetical_ascending.svg) |
+| `settings_sort_alphabetical_descending.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sort_alphabetical_descending.svg) |
+| `settings_sort_alphabetical_variant.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sort_alphabetical_variant.svg) |
+| `settings_sort_variant.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sort_variant.svg) |
+| `settings_square_edit_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_square_edit_outline.svg) |
+| `settings_star.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_star.svg) |
+| `settings_star_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_star_outline.svg) |
+| `settings_sync.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_sync.svg) |
+| `settings_tag.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_tag.svg) |
+| `settings_tag_multiple_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_tag_multiple_outline.svg) |
+| `settings_tag_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_tag_outline.svg) |
+| `settings_thermometer_lines.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_thermometer_lines.svg) |
+| `settings_toggle_switch.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_toggle_switch.svg) |
+| `settings_tools.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_tools.svg) |
+| `settings_translate.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_translate.svg) |
+| `settings_view_grid_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_view_grid_outline.svg) |
+| `settings_view_list_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_view_list_outline.svg) |
+| `settings_view_quilt.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_view_quilt.svg) |
+| `settings_wallpaper.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_wallpaper.svg) |
+| `settings_weather_night.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_weather_night.svg) |
+| `settings_weather_sunny.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_weather_sunny.svg) |
+| `settings_widgets.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_widgets.svg) |
+| `settings_wifi.svg` | [SVG](Streamline%20Flex%20Gradient/settings/settings_wifi.svg) |
+| `view_carousel_outline.svg` | [SVG](Streamline%20Flex%20Gradient/settings/view_carousel_outline.svg) |
 
 ## koreader
 
