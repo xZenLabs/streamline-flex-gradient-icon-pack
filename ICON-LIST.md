@@ -95,6 +95,7 @@ Quick settings, shared Zen buttons, and playback controls.
 | `skip_right.svg` | [SVG](Streamline%20Flex%20Gradient/controls/skip_right.svg) |
 | `star.filled.svg` | [SVG](Streamline%20Flex%20Gradient/controls/star.filled.svg) |
 | `star.svg` | [SVG](Streamline%20Flex%20Gradient/controls/star.svg) |
+| `zenfm.svg` | [SVG](Streamline%20Flex%20Gradient/controls/zenfm.svg) |
 
 ## launcher
 
