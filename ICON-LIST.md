@@ -108,6 +108,8 @@ App Launcher, plugin shortcuts, and utility artwork for the icon picker.
 | `avatar.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/avatar.svg) |
 | `blocks.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/blocks.svg) |
 | `book_closed.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/book_closed.svg) |
+| `bookorbit.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/bookorbit.svg) |
+| `bookorbit.tab.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/bookorbit.tab.svg) |
 | `bookshelf.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/bookshelf.svg) |
 | `calculator.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/calculator.svg) |
 | `calendar.svg` | [SVG](Streamline%20Flex%20Gradient/launcher/calendar.svg) |
